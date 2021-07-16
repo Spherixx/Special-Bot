@@ -2,7 +2,7 @@
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
-#include BotFunc.ahk
+#include Functions.ahk
 
 Numpad1::
     doTheShit()

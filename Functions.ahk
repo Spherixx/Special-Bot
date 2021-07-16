@@ -3,21 +3,21 @@ SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
 clickMelee() {
-    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 C:\AHK Images\meleepray2.png
+    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 \images\meleepray2.png
     FoundY += 50
     MouseClick, Left, %FoundX%, %FoundY%
     Sleep 250
 }
 
 clickMage() {
-    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 C:\AHK Images\magepray2.png
+    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 \images\magepray2.png
     FoundY += 50
     MouseClick, Left, %FoundX%, %FoundY%
     Sleep 250
 }
 
 clickRange() {
-    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 C:\AHK Images\rangepray2.png
+    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 \images\rangepray2.png
     FoundY += 50
     MouseClick, Left, %FoundX%, %FoundY%
     Sleep 250
@@ -54,7 +54,7 @@ clickHd() {
 }
 
 checkPrayer() {
-    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 C:\AHK Images\soulsplit.png
+    ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 \images\soulsplit.png
     if (ErrorLevel = 0) {
         Return
     }
@@ -93,7 +93,7 @@ checkBossBar() {
 }
 
 checkCombat() {
-    ImageSearch, FoundX, FoundY, 15, 474, 86, 486, *30 C:\AHK Images\combatwrong1.png
+    ImageSearch, FoundX, FoundY, 15, 474, 86, 486, *30 \images\combatwrong1.png
     if (ErrorLevel = 1) {
         Return
     }
@@ -115,7 +115,7 @@ checkOverload() {
 checkCurrentStyle() {
     ;if we find mage wepaon in inventory, we're currently using range
     currentStyle = none
-    ImageSearch, FoundX, FoundY, 602, 237, 650, 278, *45 C:\AHK Images\mage.png
+    ImageSearch, FoundX, FoundY, 602, 237, 650, 278, *45 \images\mage.png
     if (ErrorLevel = 0) {
         showText("Current Style is Range", 1)
         currentStyle = range
@@ -130,7 +130,7 @@ checkCurrentStyle() {
 checkChatbox(){
     ;checking for wrong combat style on kiljaeden and heimdal
     try {
-        ImageSearch, FoundX, FoundY, 15, 474, 86, 486, *30 C:\AHK Images\combatwrong1.png
+        ImageSearch, FoundX, FoundY, 15, 474, 86, 486, *30 \images\combatwrong1.png
         if (ErrorLevel = 1) {
             showText("Correct Combat Style", 1)
 
