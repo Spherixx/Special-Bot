@@ -2,6 +2,8 @@
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
+#Include, debugui.ahk
+
 clickMelee() {
     ImageSearch, FoundX, FoundY, 10, 35, 515, 365, *30 \images\meleepray2.png
     FoundY += 50

@@ -2,7 +2,10 @@
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
-#include Functions.ahk
+#Include, Functions.ahk
+#Include, debugui.ahk
+
+
 
 Numpad1::
     doTheShit()
