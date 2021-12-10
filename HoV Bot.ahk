@@ -13,10 +13,10 @@ return
 
 doTheShit() {
     sleepTimer = 1000
-    checkPrayer()
-    sleep 1000
-    checkOverload()
-    sleep 1000
+    ;checkPrayer()
+    ;sleep 1000
+    ;checkOverload()
+    ;sleep 1000
     resetPOV()
     sleep 1000
     IniRead, move1x, settings.ini, movekjroom, x
